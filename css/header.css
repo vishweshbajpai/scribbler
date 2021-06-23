@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+header {
+  display: flex;
+  margin: 0 10px;
+}
+
+header .logo-container {
+  flex: 15%;
+}
+
+header .logo-container .logo {
+  color: blue;
+  font-size: 45px;
+  margin: 0;
+}
+
+header .logo-container .tagline {
+  margin: 0;
+  font-size: 15px;
+}
+
+header .buttons-container {
+  flex: 85%;
+  text-align: right;
+  padding: 10px;
+}
