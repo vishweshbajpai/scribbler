@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="jquery-3.5.1.min.js"></script> -->
+    <!-- CSS files here -->
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css/header.css" rel="stylesheet" />
 
+    <!-- Bootstrap links here -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,25 +23,200 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <!-- TODO: Include Font Awesome file here -->
+
+    <!-- Font Awesome file here -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- TODO: Include Google Fonts file here -->
+
+    <!-- Google Fonts file here -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- TODO: Include all your code for the header and home page here -->
-    <header>
-      <div class="logo-container">
-        <p class="logo">ScriBBler</p>
-        <p class="tagline">Explore. Imagine. Create</p>
-      </div>
-      <div class="buttons-container">
-        <button class="btn btn-primary">Sign In</button>
-        <button class="btn btn-primary">Sign Up</button>
-      </div>
-    </header>
+    <div class="background">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <p class="logo">ScriBBler</p>
+          <p class="tagline">Explore. Imagine. Create</p>
+        </div>
+        <div class="buttons-container">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#SignIn"
+          >
+            Sign In
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#SignUp"
+          >
+            Sign Up
+          </button>
+
+          <!-- Sign-Up Modal -->
+          <div
+            class="modal fade"
+            id="SignUp"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    Get Started
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <hr style="margin: 0 1.75rem" />
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="fullName" class="form-label">Full Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        placeholder="Enter Full Name"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Username</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        placeholder="Enter Username"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword1"
+                        placeholder="Enter Password"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputPassword2" class="form-label"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword2"
+                        placeholder="Confirm Password"
+                        required
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success btn-size">
+                        Sign Up
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sign-In Modal -->
+          <div
+            class="modal fade"
+            id="SignIn"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    Welcome Back!
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <hr style="margin: 0 1.75rem" />
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Username</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        placeholder="Enter Username"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword1"
+                        placeholder="Enter Password"
+                        required
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success btn-size">
+                        Sign In
+                      </button>
+                      <div class="signInFooter">
+                        <span>Not a member?</span>
+                        <a class="signUpLink" onclick="signUpClickHandler()"
+                          >Sign Up</a
+                        >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Javascript files here -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
