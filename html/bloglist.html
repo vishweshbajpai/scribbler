@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html>
   <head>
+    <title> </title>
     <!-- CSS files here -->
-    <link href="./css/index.css" rel="stylesheet" />
-    <link href="./css/header.css" rel="stylesheet" />
+    <link href="../css/bloglist.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
 
     <!-- Bootstrap links here -->
     <link
@@ -47,7 +47,7 @@
       <header>
         <div class="logo-container">
           <p class="logo">ScriBBler</p>
-          <p class="tagline">Explore. Imagine. Create</p>
+          <p class="tagline" style="color: white">Explore. Imagine. Create</p>
         </div>
         <div class="buttons-container">
           <button
@@ -215,86 +215,9 @@
         </div>
       </header>
       <!-- Header closed-->
-
-      <!-- Body -->
-      <div class="body-outer-container">
-        <div class="body-inner-container">
-          <a href="./html/bloglist.html" class="allPosts">
-            <button type="button" class="btn btn-secondary blogpostsButton">
-              All Posts
-            </button>
-          </a>
-          <button
-            type="button"
-            class="btn btn-secondary blogpostsButton"
-            data-bs-toggle="modal"
-            data-bs-target="#CreatePost"
-          >
-            Create Post
-          </button>
-        </div>
-
-        <!-- Create Post Modal -->
-        <div
-          class="modal fade"
-          id="CreatePost"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div
-            class="modal-dialog modal-dialog-centered"
-            style="width: 900px !important"
-          >
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">
-                  Pen Your Post
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <hr style="margin: 0 1.75rem" />
-              <form>
-                <div class="modal-body">
-                  <div class="mb-3">
-                    <label for="username" class="form-label">Title :</label>
-                    <input
-                      type="text"
-                      class="form-control titleInputField"
-                      id="username"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="textarea" class="form-label">Content :</label>
-                    <textarea
-                      class="form-control"
-                      id="textarea"
-                      rows="10"
-                      cols="20"
-                      required
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-success">Create</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- Javascript files here -->
-    <script src="./js/index.js"></script>
-    <script src="./js/header.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/bloglist.js"></script>
   </body>
 </html>

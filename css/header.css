@@ -8,12 +8,14 @@ header .logo-container {
 }
 
 header .logo-container .logo {
-  color: blue;
+  font-family: "Satisfy", cursive;
+  color: mediumblue;
   font-size: 45px;
   margin: 0;
 }
 
 header .logo-container .tagline {
+  font-family: "Marck Script", cursive;
   margin: 0;
   font-size: 15px;
 }
@@ -22,4 +24,68 @@ header .buttons-container {
   flex: 85%;
   text-align: right;
   padding: 10px;
+}
+
+.btn-signIn {
+  margin-right: 10px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
+
+.modal-dialog {
+  width: 400px !important;
+  max-width: 1000px !important;
+}
+
+.modal-header {
+  display: block !important;
+  border: 0 !important;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.modal-body {
+  padding: 1rem 1.5rem !important;
+}
+
+.modal-footer {
+  justify-content: center !important;
+  padding: 1rem 1.5rem !important;
+  border: 0 !important;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.mb-3 {
+  text-align: left;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  background-color: #0606060f !important;
+}
+
+.btn-size {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.signInFooter {
+  font-weight: 600;
+  margin-top: 20px !important;
+}
+
+.signUpLink {
+  text-decoration: none;
+  cursor: pointer;
 }
