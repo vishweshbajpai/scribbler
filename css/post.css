@@ -1,0 +1,78 @@
+.body-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 70px;
+  padding-bottom: 40px;
+}
+
+.blog-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.author {
+  margin: 5px 0px;
+  font-size: 25px;
+  font-family: "Satisfy";
+}
+.edit-button {
+  margin: 5px 0px;
+  padding: 0px 15px !important;
+}
+
+.edit-logo {
+  margin-left: 5px;
+}
+
+.blog-content {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.like-button {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.like-logo {
+  margin-right: 5px;
+}
+
+.textarea-comment {
+  width: 50% !important;
+  min-height: 100px !important;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.comment-button {
+  width: 100px;
+  margin-bottom: 40px;
+}
+
+.comments-section-heading {
+  font-weight: 600;
+}
+
+.comments-section {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.comments {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
