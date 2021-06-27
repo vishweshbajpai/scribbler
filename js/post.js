@@ -44,6 +44,7 @@ function commentClickHandler(comment) {
     div.appendChild(p);
     p.innerText = comment;
     document.getElementById("addNewComment").prepend(div);
+
     document.getElementById("textarea").value = "";
   }
 }
