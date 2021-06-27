@@ -14,7 +14,8 @@
 .blog-container {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .author {
@@ -25,6 +26,7 @@
 .edit-button {
   margin: 5px 0px;
   padding: 0px 15px !important;
+  box-shadow: 0px 2px 5px 0px #dc3545;
 }
 
 .edit-logo {
@@ -39,6 +41,7 @@
 .like-button {
   width: 100px;
   margin-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px #dc3545;
 }
 
 .like-logo {
@@ -49,12 +52,13 @@
   width: 50% !important;
   min-height: 100px !important;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .comment-button {
   width: 100px;
   margin-bottom: 40px;
+  box-shadow: 0px 2px 5px 0px #dc3545;
 }
 
 .comments-section-heading {
@@ -75,4 +79,8 @@
   padding: 10px;
   border-radius: 5px;
   margin: 5px 0px;
+}
+
+.each-comment {
+  margin: 0.5rem 0;
 }

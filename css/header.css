@@ -29,6 +29,11 @@ header .buttons-container {
 
 .btn-signIn {
   margin-right: 10px;
+  box-shadow: 0px 2px 5px 0px #3c6efd;
+}
+
+.btn-signUp {
+  box-shadow: 0px 2px 5px 0px #3c6efd;
 }
 
 .btn-close {

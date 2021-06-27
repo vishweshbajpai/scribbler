@@ -29,18 +29,6 @@
       src="https://kit.fontawesome.com/ecb8e668b1.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <link
-      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    /> -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
 
     <!-- Google Fonts file here -->
     <link
@@ -70,7 +58,7 @@
         </button>
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-primary btn-signUp"
           data-bs-toggle="modal"
           data-bs-target="#SignUp"
         >
@@ -229,43 +217,71 @@
     <!-- Body starts here -->
     <div class="body-container">
       <div class="blog-title">
-        ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
+        <span id="blog-title-text"
+          >‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span
+        >
       </div>
       <div class="blog-container">
         <p class="author">Srishti Gupta</p>
-        <button class="btn btn-danger edit-button">
-          Edit<i class="fas fa-edit edit-logo"></i>
+        <button class="btn btn-danger edit-button" onclick="editClickHandler()">
+          <span id="editText">Edit</span><i class="fas fa-edit edit-logo"></i>
         </button>
       </div>
       <div class="blog-content">
-        <p>
+        <p id="blog-content-text">
           Since JavaScript does not have any type-checking, either of these
           keywords can be used to declare a variable of any type (datatype) in
           JavaScript. Though all the three keywords are used for the same
-          purpose, they are different.
+          purpose, they are different. JavaScript is the world's most popular
+          programming language. JavaScript is the programming language of the
+          Web. JavaScript is easy to learn. JavaScript is a scripting or
+          programming language that allows you to implement complex features on
+          web pages. Every time a web page does more than just sit there and
+          display static information for you to look at displaying timely
+          content updates, interactive maps, animated 2D/3D graphics, scrolling
+          video jukeboxes, etc. you can bet that JavaScript is probably
+          involved. It is the third layer of the layer cake of standard web
+          technologies, two of which (HTML and CSS). Since JavaScript does not
+          have any type-checking, either of these keywords can be used to
+          declare a variable of any type (datatype) in JavaScript. Though all
+          the three keywords are used for the same purpose, they are different.
         </p>
       </div>
-      <button class="btn btn-danger like-button">
-        <i class="fas fa-thumbs-up like-logo"></i>Like
+      <button class="btn btn-danger like-button" onclick="likeClickHandler()">
+        <i class="fas fa-thumbs-up like-logo"></i>
+        <span id="likeText">Like</span>
       </button>
-      <p style="font-size: 14px">Be the first one to like</p>
-      <textarea
-        class="form-control textarea-comment"
-        id="textarea"
-        rows="5"
-        cols="10"
-        placeholder="Leave a comment..."
-      ></textarea>
-      <button class="btn btn-danger comment-button">Comment</button>
+      <p id="likeCountText" style="font-size: 14px">
+        Be the first one to like this!
+      </p>
+      <form>
+        <textarea
+          class="form-control textarea-comment"
+          id="textarea"
+          rows="5"
+          cols="10"
+          placeholder="Leave a comment..."
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="btn btn-danger comment-button"
+          onclick="commentClickHandler(textarea.value); return false"
+        >
+          Comment
+        </button>
+      </form>
+
       <p class="comments-section-heading">All Comments</p>
-      <div class="comments-section">
+      <div id="addNewComment" class="comments-section">
         <div class="comments">
-          <p>lalal</p>
-        </div>
-        <div class="comments">
-          <p>lilil</p>
+          <p class="each-comment">Great post!</p>
         </div>
       </div>
     </div>
+
+    <!-- JavaScript files here -->
+    <script src="../js/post.js"></script>
+    <script src="../js/header.js"></script>
   </body>
 </html>

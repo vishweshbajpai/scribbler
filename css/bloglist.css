@@ -98,3 +98,23 @@
   top: -10px;
   color: black;
 }
+
+.confirm-delete {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.confirm-delete-text {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.confirm-delete-buttons {
+  width: 45%;
+  padding: 10px 0px !important;
+}

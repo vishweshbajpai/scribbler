@@ -72,7 +72,7 @@
           </button>
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-primary btn-signUp"
             data-bs-toggle="modal"
             data-bs-target="#SignUp"
           >
@@ -242,23 +242,25 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">
-                Are you sure you want to delete this post?
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
             <div class="modal-body">
-              <div class="mb-3">sfaasf</div>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-success">Create</button>
-              <button type="submit" class="btn btn-success">Create</button>
+              <p class="confirm-delete-text">
+                Are you sure you want to delete this post?
+              </p>
+              <div class="confirm-delete">
+                <button
+                  type="submit"
+                  class="btn btn-danger confirm-delete-buttons"
+                >
+                  Yes
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-success confirm-delete-buttons"
+                  data-bs-dismiss="modal"
+                >
+                  No
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -294,20 +296,111 @@
           </div>
 
           <!-- Second Blog -->
-          <div class="custom-card"></div>
+          <div class="custom-card">
+            <p class="custom-card-username">Colby Fayock</p>
+            <div class="custom-card-text">
+              <div class="custom-card-heading">
+                <p class="blog-heading">
+                  What is linting and how can it save you time?
+                </p>
+                <a data-bs-toggle="modal" href="#Trash" class="trash-icon">
+                  <i class="fas fa-trash-alt"></i>
+                </a>
+              </div>
+              <div class="custom-card-footer">
+                <p class="blog-text">
+                  One of the biggest challenges in software development is time.
+                  It’s something we can’t easily get more of, but linting can
+                  help us make the most out of the time we have.
+                </p>
+              </div>
+              <a href="./post.html" class="dots-icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="body-inner-container">
           <!-- Third Blog -->
-          <div class="custom-card"></div>
+          <div class="custom-card">
+            <p class="custom-card-username">Yazeed Bzadough</p>
+            <div class="custom-card-text">
+              <div class="custom-card-heading">
+                <p class="blog-heading">
+                  How to Get More Views on Your Tech Blog
+                </p>
+                <a data-bs-toggle="modal" href="#Trash" class="trash-icon">
+                  <i class="fas fa-trash-alt"></i>
+                </a>
+              </div>
+              <div class="custom-card-footer">
+                <p class="blog-text">
+                  If you're a developer with a Twitter account, you've already
+                  seen everyone and their cat start a blog, YouTube channel, or
+                  Patreon. We all want to become stars, or at the very least, a
+                  recognizable name in the industry.
+                </p>
+              </div>
+              <a href="./post.html" class="dots-icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+            </div>
+          </div>
 
           <!-- Fourth Blog -->
-          <div class="custom-card"></div>
+          <div class="custom-card">
+            <p class="custom-card-username">Cedd Burge</p>
+            <div class="custom-card-text">
+              <div class="custom-card-heading">
+                <p class="blog-heading">How to write easily describable code</p>
+                <a data-bs-toggle="modal" href="#Trash" class="trash-icon">
+                  <i class="fas fa-trash-alt"></i>
+                </a>
+              </div>
+              <div class="custom-card-footer">
+                <p class="blog-text">
+                  When code is not describable using words, most people have to
+                  do some mental mapping to turn it in to words. This wastes
+                  mental energy, and you run the risk of getting the mapping
+                  wrong. Different people will map to different words, which
+                  leads to confusion when discussing the code.
+                </p>
+              </div>
+              <a href="./post.html" class="dots-icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="body-inner-container">
-          <!---->
-          <div class="custom-card"></div>
+          <!-- Fifth Blog -->
+          <div class="custom-card">
+            <p class="custom-card-username">Srishti Gupta</p>
+            <div class="custom-card-text">
+              <div class="custom-card-heading">
+                <p class="blog-heading">
+                  Everything you should know about ‘module’ & ‘require’ in
+                  Node.js
+                </p>
+                <a data-bs-toggle="modal" href="#Trash" class="trash-icon">
+                  <i class="fas fa-trash-alt"></i>
+                </a>
+              </div>
+              <div class="custom-card-footer">
+                <p class="blog-text">
+                  Node.js treats each JavaScript file as a separate module. For
+                  instance, if you have a file containing some code and this
+                  file is named xyz.js, then this file is treated as a module in
+                  Node, and you can say that you’ve created a module named xyz.
+                </p>
+              </div>
+              <a href="./post.html" class="dots-icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Body closed -->
